@@ -1,5 +1,5 @@
-import { motion } from "motion/react";
 import { Github, Star } from "lucide-react";
+import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface ProjectCardProps {
@@ -51,7 +51,7 @@ export function ProjectCard({
       {/* Content */}
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-        <p className="text-gray-400 text-sm mb-4 line-clamp-2">{description}</p>
+        <p className="text-gray-400 text-sm mb-4 line-clamp-3">{description}</p>
 
         {/* Tech badges */}
         <div className="flex flex-wrap gap-2 mb-4">

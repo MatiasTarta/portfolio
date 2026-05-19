@@ -8,20 +8,10 @@ const projects = [
     tech: ["TypeScript", "React Native", "Expo", "JavaScript"],
     imageUrl: "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     githubUrl: "https://github.com/MatiasTarta/monopay",
-    featured: true,
     gradientClass: "from-green-500/30 to-purple-600/30",
   },
   {
-    title: "Club Rio Negro",
-    description: "Website for Club Rio Negro, built with HTML/CSS.",
-    tech: ["HTML", "CSS"],
-    imageUrl: "https://images.unsplash.com/photo-1775120061216-42c575be9d3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    githubUrl: "https://github.com/MatiasTarta/ClubRioNegro",
-    featured: true,
-    gradientClass: "from-red-600/30 to-black/50",
-  },
-  {
-    title: "Data Structures",
+    title: "Data Structures Projects",
     description:
       "Academic work implementing data structures for Universidad Nacional del Comahue.",
     tech: ["Java"],
@@ -30,7 +20,7 @@ const projects = [
     gradientClass: "from-blue-500/30 to-cyan-500/30",
   },
   {
-    title: "Concurrent Programming (TP Final)",
+    title: "Concurrent Programming (Final Project)",
     description:
       "Final project for Concurrent Programming course — advanced multithreading concepts in Java.",
     tech: ["Java", "Multithreading"],
@@ -40,10 +30,10 @@ const projects = [
   },
   {
     title: "Laboratorio 2025",
-    description: "Lab projects from 2025, built with HTML.",
-    tech: ["HTML"],
+    description: "Frontend assignments for the Web Design & Programming Laboratory course · Universidad Nacional del Comahue.",
+    tech: ["HTML", "CSS", "JavaScript"],
     imageUrl: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    githubUrl: "https://github.com/MatiasTarta/Laboratorio2025",
+    githubUrl: "https://github.com/nicocayo/lab2025",
     gradientClass: "from-gray-600/30 to-gray-400/30",
   },
 ];
