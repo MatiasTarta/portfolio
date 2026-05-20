@@ -1,42 +1,70 @@
 import { ProjectCard } from "./ProjectCard";
 
-const projects = [
-  {
-    title: "Monopay",
-    description:
-      "Mobile payment application built with TypeScript and Expo. Includes backend integration, custom hooks, and services layer.",
-    tech: ["TypeScript", "React Native", "Expo", "JavaScript"],
-    imageUrl: "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    githubUrl: "https://github.com/MatiasTarta/monopay",
-    gradientClass: "from-green-500/30 to-purple-600/30",
-  },
-  {
-    title: "Data Structures Projects",
-    description:
-      "Academic work implementing data structures for Universidad Nacional del Comahue.",
-    tech: ["Java"],
-    imageUrl: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    githubUrl: "https://github.com/MatiasTarta/Data_Structures",
-    gradientClass: "from-blue-500/30 to-cyan-500/30",
-  },
-  {
-    title: "Concurrent Programming (Final Project)",
-    description:
-      "Final project for Concurrent Programming course — advanced multithreading concepts in Java.",
-    tech: ["Java", "Multithreading"],
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    githubUrl: "https://github.com/MatiasTarta/TPFinalProgramacionConcurrente",
-    gradientClass: "from-orange-500/30 to-yellow-600/30",
-  },
-  {
-    title: "Laboratorio 2025",
-    description: "Frontend assignments for the Web Design & Programming Laboratory course · Universidad Nacional del Comahue.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    githubUrl: "https://github.com/nicocayo/lab2025",
-    gradientClass: "from-gray-600/30 to-gray-400/30",
-  },
-];
+const projects: Array<{
+  title: string;
+  description: string;
+  tech: string[];
+  imageUrl: string;
+  githubUrl: string;
+  gradientClass: string;
+  year: string;
+  status: "In Progress" | "Completed";
+}> = [
+    {
+      title: "Monopay",
+      description:
+        "Mobile payment application built with TypeScript and Expo. Includes backend integration, custom hooks, and services layer.",
+      tech: ["TypeScript", "React Native", "Expo", "JavaScript"],
+      imageUrl: "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      githubUrl: "https://github.com/MatiasTarta/monopay",
+      gradientClass: "from-green-500/30 to-purple-600/30",
+      year: "2026",
+      status: "In Progress"
+    },
+    {
+      title: "Rutina",
+      description: "Personal Notepad app built with TypeScript and Expo. Features include note creation, editing, deletion, and local storage.",
+      tech: ["TypeScript", "React Native", "Expo", "JavaScript"],
+      imageUrl: "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      githubUrl: "https://github.com/MatiasTarta/rutina",
+      gradientClass: "from-green-500/30 to-purple-600/30",
+      year: "2026",
+      status: "In Progress"
+    },
+    {
+      title: "Data Structures Projects",
+      description:
+        "Academic work implementing data structures for Universidad Nacional del Comahue.",
+      tech: ["Java"],
+      imageUrl: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      githubUrl: "https://github.com/MatiasTarta/Data_Structures",
+      gradientClass: "from-blue-500/30 to-cyan-500/30",
+      year: "2024",
+      status: "Completed"
+    },
+    {
+      title: "Concurrent Programming (Final Project)",
+      description:
+        "Final project for Concurrent Programming course — advanced multithreading concepts in Java.",
+      tech: ["Java", "Multithreading"],
+      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      githubUrl: "https://github.com/MatiasTarta/TPFinalProgramacionConcurrente",
+      gradientClass: "from-orange-500/30 to-yellow-600/30",
+      year: "2024",
+      status: "Completed"
+    },
+    {
+      title: "Laboratorio 2025",
+      description: "Frontend assignments for the Web Design & Programming Laboratory course · Universidad Nacional del Comahue.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      imageUrl: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      githubUrl: "https://github.com/nicocayo/lab2025",
+      gradientClass: "from-gray-600/30 to-gray-400/30",
+      year: "2025",
+      status: "Completed"
+
+    },
+  ];
 
 export function ProjectsSection() {
   return (

@@ -10,16 +10,14 @@ interface ProjectCardProps {
   githubUrl: string;
   featured?: boolean;
   gradientClass?: string;
+  year?: string;
+  status?: "In Progress" | "Completed";
 }
 
 export function ProjectCard({
-  title,
-  description,
-  tech,
-  imageUrl,
-  githubUrl,
-  featured = false,
-  gradientClass = "from-indigo-500/20 to-purple-500/20",
+  title, description, tech, imageUrl, githubUrl,
+  featured = false, gradientClass = "from-indigo-500/20 to-purple-500/20",
+  year, status,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -51,6 +49,16 @@ export function ProjectCard({
       {/* Content */}
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+
+        {/* Year / Status */}
+        <div className="flex gap-2 mb-2">
+          {year && <span className="text-xs text-gray-500">{year}</span>}
+          {status && (
+            <span className={`text-xs px-2 py-0.5 rounded-full ${status === "In Progress" ? "bg-yellow-500/20 text-yellow-400 border border-yellow-500/30" : "bg-green-500/20 text-green-400 border border-green-500/30"}`}>
+              {status}
+            </span>
+          )}
+        </div>
         <p className="text-gray-400 text-sm mb-4 line-clamp-3">{description}</p>
 
         {/* Tech badges */}

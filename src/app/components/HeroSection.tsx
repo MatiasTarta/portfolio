@@ -1,5 +1,5 @@
+import { ChevronDown, Github } from "lucide-react";
 import { motion } from "motion/react";
-import { Github, ChevronDown } from "lucide-react";
 
 export function HeroSection() {
   const scrollToProjects = () => {
@@ -7,7 +7,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#0d1117] via-[#161b22] to-[#0d1117]">
+    <section className="relative py-36 flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#0d1117] via-[#161b22] to-[#0d1117]">
       {/* Animated background gradient */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -47,9 +47,9 @@ export function HeroSection() {
         >
           {/* Avatar */}
           <motion.img
-            src="https://avatars.githubusercontent.com/u/129552951?v=4"
-            alt="Matias Tarta"
-            className="w-32 h-32 rounded-full border-4 border-indigo-500/50 shadow-lg shadow-indigo-500/30"
+            src="avatar.jpeg"
+            alt="Matias Tartaglia"
+            className="w-48 h-48 rounded-full border-4 border-indigo-500/50 shadow-lg shadow-indigo-500/30"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
@@ -63,7 +63,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              Matias Tarta
+              Matias Tartaglia
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl text-indigo-400"
