@@ -1,4 +1,5 @@
-import { ChevronDown, Github } from "lucide-react";
+
+import { ChevronDown, Download, Github } from "lucide-react";
 import { motion } from "motion/react";
 
 export function HeroSection() {
@@ -98,6 +99,22 @@ export function HeroSection() {
               <Github className="w-5 h-5" />
               GitHub Profile
             </a>
+            <a
+              href="/portfolio/cvEnglish.pdf"
+              download
+              className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2"
+            >
+              <Download className="w-5 h-5" />
+              Download CV
+            </a>
+            <a
+              href="/portfolio/cv.pdf"
+              download
+              className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2"
+            >
+              <Download className="w-5 h-5" />
+              Download CV(Spanish)
+            </a>
           </motion.div>
         </motion.div>
 
@@ -111,6 +128,6 @@ export function HeroSection() {
           <ChevronDown className="w-8 h-8 text-gray-500" />
         </motion.div>
       </div>
-    </section>
+    </section >
   );
 }
