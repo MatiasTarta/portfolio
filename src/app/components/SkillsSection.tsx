@@ -1,5 +1,5 @@
+import { Code2, Database, GitBranch, Smartphone } from "lucide-react";
 import { motion } from "motion/react";
-import { Code2, Smartphone, Database, GitBranch } from "lucide-react";
 
 const skillCategories = [
   {
@@ -81,6 +81,21 @@ export function SkillsSection() {
           })}
         </div>
       </div>
+      {/* GitHub Stats */}
+      <motion.div
+        className="mt-16 flex flex-col items-center gap-4"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h3 className="text-2xl font-bold text-white">GitHub Stats</h3>
+        <img
+          src="https://github-stats.vercel.app/api?username=MatiasTarta&show_icons=true&theme=github_dark&hide_border=true&bg_color=161b22&title_color=ffffff&text_color=ffffff"
+          alt="GitHub Stats"
+          className="rounded-xl"
+        />
+      </motion.div>
     </section>
+
   );
 }

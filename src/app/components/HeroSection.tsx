@@ -66,26 +66,17 @@ export function HeroSection() {
               Matias Tartaglia
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-indigo-400"
+              className="text-gray-400 text-lg max-w-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.5 }}
             >
-              Software Developer
+              CS student at Universidad Nacional del Comahue with a strong foundation in backend development —
+              data structures, concurrency, and server-side logic. I enjoy tackling complex problems,
+              whether that's architecting a backend system or building a mobile app from scratch.
+              Self-taught, adaptable, and open to remote opportunities.
             </motion.p>
           </div>
-
-          {/* Bio */}
-          <motion.p
-            className="text-gray-400 text-lg max-w-2xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-          >
-            CS student at Universidad Nacional del Comahue · Building mobile & web apps
-          </motion.p>
-
-          {/* CTA Buttons */}
           <motion.div
             className="flex flex-wrap gap-4 justify-center mt-4"
             initial={{ opacity: 0, y: 20 }}
