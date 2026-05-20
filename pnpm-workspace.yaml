@@ -1,7 +1,0 @@
-packages:
-  - '.'
-allowBuilds:
-  '@tailwindcss/oxide': false
-  esbuild: false
-minimumReleaseAgeExclude:
-  - '@types/node@25.9.1'
